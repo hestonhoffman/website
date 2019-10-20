@@ -1,0 +1,102 @@
+#index {
+    margin-left: 200px;
+    margin-top: 50px;
+    color: #c8b1a9;
+    position: absolute;
+    width: aut;
+    height: auto;
+    padding: 20px;
+    float: left;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14pt;
+}
+
+#nametext {
+    color: #c8b1a9;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    color: black;
+}
+
+#nav {
+    font-size: 12px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#mainlink {
+    color: black;
+}
+
+#mainhover {
+    co
+}
+
+#poem {
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: absolute;
+    width: aut;
+    height: auto;
+    padding: 20px;
+    background: white;
+    float: left;
+}
+
+#picindex {
+    margin-top: 103px;
+    position: absolute;
+    right: 0px;
+}
+
+#backpic {
+    background-image: url("redmagi.png");
+}
+
+#pic {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#picmid {
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+}
+
+footer {
+    color: black;
+    position: fixed;
+    top: 0px;
+    right: 3px;
+}

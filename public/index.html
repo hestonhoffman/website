@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heston Hoffman</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.1.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.1.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.1.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.1.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.1.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+    <div class="page">
+        <div id="picindex">
+            <img src="Louie_and_I copy.jpeg" width="50%" height="auto">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./content/bio.html">Bio</a></li>
+                <li><a href="./poetry/poetry.html">Poetry</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <h1>Heston Hoffman</h1>
+            <p>Technical Writer at <a href="https://puppet.com">Puppet</a></p>
+            <p>Currently writing about / working on:
+                <ul>
+                    <li>Cloud-native applications</li>
+                    <li>CI/CD documentation pipelines</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+            try {
+                let app = firebase.app();
+                let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+                document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+            } catch (e) {
+                console.error(e);
+                document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+            }
+        });
+    </script>
+</body>
+
+</html>
